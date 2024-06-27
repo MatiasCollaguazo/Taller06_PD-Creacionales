@@ -4,7 +4,7 @@ package com.mycompany.taller6seccionc;
  *
  * @author Grupo#2
  */
-public class Jugador {
+public class Jugador extends Entidad{
     
     private float vida;
     private float fuerza;

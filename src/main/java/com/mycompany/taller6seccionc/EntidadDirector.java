@@ -12,6 +12,7 @@ public class EntidadDirector {
     }
     
     public void construirEntidad(){
+        builder.setAttributes();
         
     }
     

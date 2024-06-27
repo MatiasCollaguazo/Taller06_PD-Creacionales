@@ -5,28 +5,27 @@ package com.mycompany.taller6seccionc;
  * @author Grupo#2
  */
 public class JugadorBuilder extends EntidadBuilder {
-    public void definirEntidad(){
-        Jugador e = new Jugador();
-    }
 
-    public void setNombre(String nombre) {
-        e.setNombre(nombre);
+    public JugadorBuilder() {
+        e = new Jugador();
     }
 
     @Override
-    public void addAction(Accion accion) {
-        e.addAccion(accion);
+    public void setName(String nombre) {
+        e.setNombre(nombre);
     }
 
     @Override
     public void setAttributes() {
         // Establece los atributos específicos del jugador
-       // ((Jugador) e).setVida(100);  // Ejemplo de establecimiento de la vida
-       // ((Jugador) e).setFuerza(50);  // Ejemplo de establecimiento de la fuerza
+        ((Jugador) e).setNombre("Player");  // Ejemplo de establecimiento del nombre
+        ((Jugador) e).setVida(100);  // Ejemplo de establecimiento de la vida
+        ((Jugador) e).setFuerza(50);  // Ejemplo de establecimiento de la fuerza
     }
-
+    
     @Override
-    public void setName(String nombre) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    public void addAction(Accion accion) {
+        // Ejempl, ser vulnerable al daño
+        e.addAction(accion);
     }
 }

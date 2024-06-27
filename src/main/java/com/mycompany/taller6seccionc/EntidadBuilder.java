@@ -7,10 +7,6 @@ package com.mycompany.taller6seccionc;
 public abstract class EntidadBuilder {
     protected Entidad e;
 
-    public EntidadBuilder() {
-        e = new Entidad();
-    }
-
     public Entidad getEntidad() {
         return e;
     }
@@ -19,8 +15,4 @@ public abstract class EntidadBuilder {
     public abstract void addAction(Accion accion);
     public abstract void setAttributes();
 
-    public Entidad build() {
-        setAttributes();
-        return e;
-    }
 }

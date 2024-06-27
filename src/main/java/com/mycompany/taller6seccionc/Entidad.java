@@ -33,4 +33,8 @@ public class Entidad {
     void setNombre(String nombre) {
         this.nombre = nombre;
     }
+
+    void addAction(Accion accion) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
 }
