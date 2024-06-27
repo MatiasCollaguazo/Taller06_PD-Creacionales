@@ -9,12 +9,28 @@ import java.util.ArrayList;
 public class Entidad {
     private String nombre;
     private ArrayList<Accion> acciones;
-    
-    public void addAccion(Accion accion){
+
+    public Entidad() {
+        acciones = new ArrayList<>();
+    }
+
+    public void addAccion(Accion accion) {
         acciones.add(accion);
     }
+
+    public ArrayList<Accion> getAcciones() {
+        return acciones;
+    }
     
-    public void setNombre(String nombre){
+    public void dibujar(){
+        //Dibuja la entidad, sin embargo aun no la muestra
+    }
+    
+    public void actualizar(){
+        //Actualiza la entidad en pantalla
+    }
+
+    void setNombre(String nombre) {
         this.nombre = nombre;
     }
 }
